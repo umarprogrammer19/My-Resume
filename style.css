@@ -1,0 +1,250 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* CV Container styling */
+.cv-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Header styling */
+header {
+    text-align: center;
+    border-bottom: 3px solid #4a90e2;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #4a90e2;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #4a90e2;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Social Media Icons */
+.social-icons a {
+    margin: 0 10px;
+    font-size: 1.5rem;
+}
+
+/* Set each icon to its original color */
+.social-icons a .fa-github {
+    color: #333;
+    /* GitHub */
+}
+
+.social-icons a .fa-twitter {
+    color: #1DA1F2;
+    /* Twitter */
+}
+
+.social-icons a .fa-instagram {
+    color: #E4405F;
+    /* Instagram */
+}
+
+.social-icons a .fa-facebook {
+    color: #1877F2;
+    /* Facebook */
+}
+
+/* Add hover effect to darken colors */
+.social-icons a:hover .fa-github {
+    color: #24292E;
+}
+
+.social-icons a:hover .fa-twitter {
+    color: #1A91DA;
+}
+
+.social-icons a:hover .fa-instagram {
+    color: #D62957;
+}
+
+.social-icons a:hover .fa-facebook {
+    color: #166FE5;
+}
+
+/* Section styling */
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #333;
+    border-bottom: 2px solid #4a90e2;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+/* Skills section styling */
+.skill {
+    margin-bottom: 20px;
+}
+
+.skill-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skill-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+}
+
+.progress-bar {
+    background: #e0e0e0;
+    border-radius: 8px;
+    height: 20px;
+    flex: 1;
+    margin-right: 15px;
+    overflow: hidden;
+    position: relative;
+}
+
+.progress {
+    height: 100%;
+    transition: width 0.4s ease;
+}
+
+
+/* Smooth toggle transition */
+#skills {
+    display: block;
+    opacity: 1;
+    transition: opacity 0.5s ease, height 0.5s ease;
+}
+
+#skills.hidden {
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+/* Colorful progress bars */
+.html .progress {
+    background-color: #e44d26;
+    /* HTML logo color */
+}
+
+.css .progress {
+    background-color: #264de4;
+    /* CSS logo color */
+}
+
+.javascript .progress {
+    background-color: #f0db4f;
+    /* JavaScript logo color */
+}
+
+.typescript .progress {
+    background-color: #007acc;
+    /* TypeScript logo color */
+}
+
+.react .progress {
+    background-color: #61dafb;
+    /* React logo color */
+}
+
+.percentage {
+    font-size: 1rem;
+    color: #333;
+    white-space: nowrap;
+}
+
+/* Button styling */
+button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin: 20px 0;
+    border: none;
+    background: #4a90e2;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background: #357abd;
+    transform: translateY(-2px);
+}
+
+button:active {
+    background: #2a5b9c;
+    transform: scale(0.95);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .profile-pic {
+        width: 100px;
+        height: 100px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    button {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .cv-container {
+        padding: 15px;
+    }
+
+    .profile-pic {
+        width: 80px;
+        height: 80px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+    }
+}
