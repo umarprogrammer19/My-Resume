@@ -263,39 +263,25 @@ p {
     margin-right: 10px;
 }
 
-/* Buttons */
-.btn-div {
-    display: flex;
-    gap: 20px;
-}
-
-.download-btn,
-.edit-btn {
-    background-color: #007acc;
-    color: white;
-    padding: 12px 25px;
-    border-radius: 5px;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
-    text-align: center;
-    cursor: pointer;
-}
-
-.download-btn:hover,
-.edit-btn:hover {
-    background-color: #005fa3;
-}
-
-.download-btn {
-    background-color: #007acc;
-}
-
-.edit-btn {
-    background-color: #005fa3;
-}
-
 /* Responsive Styles */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1440px) {
+    .container {
+        grid-template-columns: 1fr 1.5fr;
+        gap: 20px;
+        padding: 30px;
+    }
+
+    .profileText h2 {
+        font-size: 1.4em;
+    }
+
+    .contact-info .title,
+    .education .title {
+        font-size: 1.1em;
+    }
+}
+
+@media screen and (max-width: 968px) {
     .container {
         grid-template-columns: 1fr;
         padding: 20px;
@@ -307,11 +293,10 @@ p {
     }
 
     .profileText h2 {
-        font-size: 1.4em;
+        font-size: 1.3em;
     }
 
     .contact-info ul li {
-        flex-direction: column;
         align-items: flex-start;
     }
 
@@ -326,12 +311,6 @@ p {
 
     .skills .box {
         grid-template-columns: 1fr;
-    }
-
-    .download-btn,
-    .edit-btn {
-        width: 100%;
-        padding: 14px;
     }
 }
 
@@ -366,12 +345,6 @@ p {
     .skills .box {
         grid-template-columns: 1fr;
     }
-
-    .download-btn,
-    .edit-btn {
-        padding: 14px;
-        font-size: 14px;
-    }
 }
 
 @media screen and (max-width: 480px) {
@@ -403,11 +376,5 @@ p {
 
     .skills .box {
         grid-template-columns: 1fr;
-    }
-
-    .download-btn,
-    .edit-btn {
-        padding: 12px;
-        font-size: 13px;
     }
 }
