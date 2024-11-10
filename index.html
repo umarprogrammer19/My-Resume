@@ -4,100 +4,211 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive CV</title>
+    <meta name="description" content="Umar Farooq's Interactive CV, showcasing professional skills, education, experience, and projects.">
+    <meta name="author" content="Umar Farooq">
+    <title>Umar Farooq - Interactive CV</title>
     <link href="style.css" rel="stylesheet">
-    <link rel="shortcut icon"
-        href="https://static.vecteezy.com/system/resources/thumbnails/004/700/872/small/cv-or-vc-letter-logo-design-concept-isolated-on-white-background-vector.jpg"
-        type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-    <div class="cv-container">
-        <header>
-            <img src="./profile.jpg" alt="Profile Picture" class="profile-pic">
-            <h1>Umar Farooq</h1>
-            <p>Email: umarofficial0121@gmail.com</p>
-            <p>Phone: 0317-2472531</p>
-            <!-- Social Media Links with Icons -->
-            <div class="social-icons">
-                <a href="https://github.com/umarprogrammer19" target="_blank">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/umar-farooq-42a8702b5/" target="_blank"><i
-                        class="fab fa-linkedin"></i>
-                </a>
-                <a href="https://www.instagram.com/itx_umar_official01" target="_blank">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="https://www.facebook.com/profile.php?id=100082268683063" target="_blank">
-                    <i class="fab fa-facebook"></i>
-                </a>
-            </div>
-        </header>
+    <div class="container">
+        <!-- Left Side Section -->
+        <aside class="left_side">
+            <!-- Profile Section -->
+            <section class="profileText">
+                <figure class="imgBox">
+                    <img src="./profile.jpg" alt="Umar Farooq - Full Stack Developer">
+                </figure>
+                <h2>Umar Farooq <br> <span>Full Stack Developer</span></h2>
+            </section>
 
-        <section id="education">
-            <h2>Education</h2>
-            <p>Intermediate in Pre-Engineering, Adamjee Govt Science College</p>
-            <p>Completed In: 2024</p>
-        </section>
+            <!-- Contact Info Section -->
+            <section class="contact-info">
+                <h3 class="title">Contact Info</h3>
+                <ul>
+                    <li>
+                        <span class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
+                        <span class="text">+92 317 2472531</span>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                        <a href="mailto:umarofficial0121@gmail.com" class="text">umarofficial0121@gmail.com</a>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fa fa-github-square" aria-hidden="true"></i></span>
+                        <a href="https://github.com/umarprogrammer19" target="_blank" class="text">GitHub</a>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fa fa-linkedin-square" aria-hidden="true"></i></span>
+                        <a href="https://www.linkedin.com/in/umar-farooq-42a8702b5/" target="_blank" class="text">LinkedIn</a>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                        <span class="text">Karachi, Pakistan</span>
+                    </li>
+                </ul>
+            </section>
 
-        <section id="skills">
-            <h2>Skills</h2>
-            <div class="skill">
-                <h3>HTML</h3>
-                <div class="skill-bar">
-                    <div class="progress-bar html">
-                        <div class="progress" style="width: 90%"></div>
-                    </div>
-                    <span class="percentage">90%</span>
-                </div>
+            <!-- Education Section -->
+<!-- Education Section -->
+<section class="education">
+    <h3 class="title">Education</h3>
+    <ul class="education-list">
+        <li class="education-item">
+            <div class="education-year">
+                <h5>2021 - 2023</h5>
             </div>
-            <div class="skill">
-                <h3>CSS</h3>
-                <div class="skill-bar">
-                    <div class="progress-bar css">
-                        <div class="progress" style="width: 95%"></div>
-                    </div>
-                    <span class="percentage">95%</span>
-                </div>
+            <div class="education-details">
+                <h4>Biology - Science</h4>
+                <p class="institution">Hermain Acme Grammar School</p>
             </div>
-            <div class="skill">
-                <h3>JavaScript</h3>
-                <div class="skill-bar">
-                    <div class="progress-bar javascript">
-                        <div class="progress" style="width: 80%"></div>
-                    </div>
-                    <span class="percentage">80%</span>
-                </div>
+        </li>
+        <li class="education-item">
+            <div class="education-year">
+                <h5>2024 - 2025</h5>
             </div>
-            <div class="skill">
-                <h3>TypeScript</h3>
-                <div class="skill-bar">
-                    <div class="progress-bar typescript">
-                        <div class="progress" style="width: 75%"></div>
-                    </div>
-                    <span class="percentage">75%</span>
-                </div>
+            <div class="education-details">
+                <h4>Pre-Engineering</h4>
+                <p class="institution">Adamjee Government Science College</p>
             </div>
-            <div class="skill">
-                <h3>React</h3>
-                <div class="skill-bar">
-                    <div class="progress-bar react">
-                        <div class="progress" style="width: 85%"></div>
-                    </div>
-                    <span class="percentage">85%</span>
-                </div>
+        </li>
+        <li class="education-item">
+            <div class="education-year">
+                <h5>2024 - 2025</h5>
             </div>
-        </section>
+            <div class="education-details">
+                <h4>Cloud Applied Generative AI Engineering</h4>
+                <p class="institution">Governor Sindh IT Initiative</p>
+            </div>
+        </li>
+    </ul>
+</section>
 
-        <section id="work-experience">
-            <h2>Work Experience</h2>
-            <p>1 year experience in Web Development.</p>
-            <p>Developed and maintained complex web applications using modern technologies.</p>
-        </section>
+            <!-- Languages Section -->
+            <section class="contact-info language">
+                <h3 class="title">Languages</h3>
+                <ul>
+                    <li>
+                        <span class="text">English</span>
+                        <span class="percent">
+                            <div style="width: 80%;"></div>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="text">Urdu</span>
+                        <span class="percent">
+                            <div style="width: 90%;"></div>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="text">Sindhi</span>
+                        <span class="percent">
+                            <div style="width: 50%;"></div>
+                        </span>
+                    </li>
+                </ul>
+            </section>
+        </aside>
 
-        <button id="toggle-skills">Toggle Skills</button>
+        <!-- Right Side Section -->
+        <main class="right_side">
+            <!-- Profile Section -->
+            <section class="about">
+                <h2 class="title2">Profile</h2>
+                <p>
+                    <strong>Full Stack Developer | Senior Frontend Developer | Tech Leader</strong><br>
+                    I am a dynamic and passionate Full Stack Developer and Senior Frontend Developer with over 2 years of hands-on experience delivering scalable, user-focused web applications. My expertise spans both frontend and backend technologies, and I have successfully developed advanced chatbots with integrated voice functionality, leveraging cutting-edge technologies like Artificial General Intelligence (AGI) and Robotics AI. Driven by my commitment to innovation, I am also advancing my knowledge in Cloud Applied Generative AI Engineering, exploring the latest in AI and cloud technologies. Concurrently, I am pursuing a Bachelor’s in Business Administration (BBA) to deepen my understanding of the synergy between technology, business, and finance. In addition to my technical pursuits, I proudly serve as a mentor and leader at the Governor Sindh IT Initiative, guiding over 50 students to foster innovation and collaboration within the tech community. With a solid foundation in both technical and business domains, I am dedicated to shaping the future of AI and contributing to the digital economy's growth.
+                </p>
+            </section>
+
+            <!-- Experience Section -->
+            <section class="about">
+                <h2 class="title2">Experience</h2>
+                <div class="box">
+                    <div class="year_company">
+                        <h5>2023 - 2024</h5>
+                    </div>
+                    <div class="text">
+                        <h4>Frontend Developer</h4>
+                        <p>Worked as an intern at Intern, Pakistan.</p>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="year_company">
+                        <h5>2024 - Present</h5>
+                    </div>
+                    <div class="text">
+                        <h4>Full Stack Developer</h4>
+                        <p>Works as a Developer at an International based Company.</p>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="year_company">
+                        <h5>2024 - Present</h5>
+                    </div>
+                    <div class="text">
+                        <h4>Student Leader</h4>
+                        <p>Leads a team of 50 students at the Governor Sindh IT Initiative.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills Section -->
+            <section class="about skills">
+                <h2 class="title2">Professional Skills</h2>
+                <div class="box">
+                    <h4>HTML</h4>
+                    <div class="percent2">
+                        <div style="width: 85%;"></div>
+                    </div>
+                </div>
+                <div class="box">
+                    <h4>CSS</h4>
+                    <div class="percent2">
+                        <div style="width: 70%;"></div>
+                    </div>
+                </div>
+                <div class="box">
+                    <h4>JavaScript</h4>
+                    <div class="percent2">
+                        <div style="width: 90%;"></div>
+                    </div>
+                </div>
+                <div class="box">
+                    <h4>React.js</h4>
+                    <div class="percent2">
+                        <div style="width: 85%;"></div>
+                    </div>
+                </div>
+                <div class="box">
+                    <h4>TypeScript</h4>
+                    <div class="percent2">
+                        <div style="width: 85%;"></div>
+                    </div>
+                </div>
+                <div class="box">
+                    <h4>Next.js</h4>
+                    <div class="percent2">
+                        <div style="width: 90%;"></div>
+                    </div>
+                </div>
+                <div class="box">
+                    <h4>Express JS</h4>
+                    <div class="percent2">
+                        <div style="width: 90%;"></div>
+                    </div>
+                </div>
+                <div class="box">
+                    <h4>MUI</h4>
+                    <div class="percent2">
+                        <div style="width: 90%;"></div>
+                    </div>
+                </div>
+            </section>
+        </main>
     </div>
 
     <script src="./script.js"></script>

@@ -1,250 +1,295 @@
-/* Basic reset */
+/* Universal Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-/* General body styling */
-body {
     font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    background-color: #f0f0f0;
-    color: #333;
 }
 
-/* CV Container styling */
-.cv-container {
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 30px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    position: relative;
-    overflow: hidden;
+/* Container */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+    max-width: 1200px;
+    min-height: 1000px;
+    margin: 50px auto;
+    background-color: #f9fafc;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    padding: 40px;
 }
 
-/* Header styling */
-header {
+/* Left Side */
+.container .left_side {
+    background-color: #007acc;
+    padding: 40px;
+    color: #ffffff;
+    border-radius: 10px;
     text-align: center;
-    border-bottom: 3px solid #4a90e2;
+}
+
+/* Profile text */
+.profileText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.profileText .imgBox {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
     margin-bottom: 20px;
 }
 
-.profile-pic {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
+.profileText .imgBox img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    border: 4px solid #4a90e2;
+}
+
+.profileText h2 {
+    color: #f1f1f1;
+    font-size: 1.6em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+
+.profileText h2 span {
+    font-size: 0.85em;
+    font-weight: 300;
+    display: block;
+    margin-top: 5px;
+}
+
+/* Contact Info */
+.contact-info {
+    padding-top: 40px;
+}
+
+.contact-info .title {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+
+.contact-info ul {
+    list-style: none;
+}
+
+.contact-info ul li {
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+}
+
+.contact-info ul li .icon {
+    font-size: 20px;
+    color: #b0e0ec;
+    margin-right: 15px;
+}
+
+.contact-info ul li span,
+.contact-info ul li a {
+    color: #d3d3d3;
+    font-weight: 300;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.contact-info ul li a:hover {
+    color: #f0f8ff;
+}
+
+/* Education Section */
+.education {
+    padding-top: 40px;
+    text-align: start;
+}
+
+.education .title {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.education-list {
+    list-style: none;
+    padding: 0;
+}
+
+.education-item {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-left: 4px solid #007acc;
+}
+
+.education-year h5 {
+    font-size: 18px;
+    color: #f0f8ff;
+    font-weight: 600;
     margin-bottom: 10px;
 }
 
-h1 {
-    font-size: 2rem;
-    color: #4a90e2;
+.education-details h4 {
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.education-details .institution {
+    color: #333333;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+/* Right Side */
+.container .right_side {
+    background-color: #eaeaea;
+    padding: 40px;
+    color: #333333;
+    border-radius: 10px;
+}
+
+/* About */
+.about {
+    margin-bottom: 50px;
+}
+
+.about:last-child {
+    margin-bottom: 0;
+}
+
+.title2 {
+    color: #007acc;
+    font-size: 1.1em;
+    text-transform: capitalize;
+    letter-spacing: 1px;
     margin-bottom: 10px;
 }
 
 p {
-    font-size: 1rem;
-    color: #666;
+    color: #555555;
+    font-size: 16px;
 }
 
-/* Social Media Icons */
-.social-icons a {
-    margin: 0 10px;
-    font-size: 1.5rem;
-}
-
-/* Set each icon to its original color */
-.social-icons a .fa-github {
-    color: #333;
-    /* GitHub */
-}
-
-.social-icons a .fa-twitter {
-    color: #1DA1F2;
-    /* Twitter */
-}
-
-.social-icons a .fa-instagram {
-    color: #E4405F;
-    /* Instagram */
-}
-
-.social-icons a .fa-facebook {
-    color: #1877F2;
-    /* Facebook */
-}
-
-/* Add hover effect to darken colors */
-.social-icons a:hover .fa-github {
-    color: #24292E;
-}
-
-.social-icons a:hover .fa-twitter {
-    color: #1A91DA;
-}
-
-.social-icons a:hover .fa-instagram {
-    color: #D62957;
-}
-
-.social-icons a:hover .fa-facebook {
-    color: #166FE5;
-}
-
-/* Section styling */
-section {
-    margin-bottom: 30px;
-}
-
-h2 {
-    font-size: 1.8rem;
-    color: #333;
-    border-bottom: 2px solid #4a90e2;
-    padding-bottom: 10px;
-    margin-bottom: 15px;
-}
-
-/* Skills section styling */
-.skill {
-    margin-bottom: 20px;
-}
-
-.skill-bar {
+/* Experience */
+.about .box {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.skill-icon {
-    width: 30px;
-    height: 30px;
-    margin-right: 15px;
-}
-
-.progress-bar {
-    background: #e0e0e0;
-    border-radius: 8px;
-    height: 20px;
-    flex: 1;
-    margin-right: 15px;
-    overflow: hidden;
-    position: relative;
-}
-
-.progress {
-    height: 100%;
-    transition: width 0.4s ease;
-}
-
-
-/* Smooth toggle transition */
-#skills {
-    display: block;
-    opacity: 1;
-    transition: opacity 0.5s ease, height 0.5s ease;
-}
-
-#skills.hidden {
-    opacity: 0;
-    height: 0;
-    overflow: hidden;
-}
-
-/* Colorful progress bars */
-.html .progress {
-    background-color: #e44d26;
-    /* HTML logo color */
-}
-
-.css .progress {
-    background-color: #264de4;
-    /* CSS logo color */
-}
-
-.javascript .progress {
-    background-color: #f0db4f;
-    /* JavaScript logo color */
-}
-
-.typescript .progress {
-    background-color: #007acc;
-    /* TypeScript logo color */
-}
-
-.react .progress {
-    background-color: #61dafb;
-    /* React logo color */
-}
-
-.percentage {
-    font-size: 1rem;
-    color: #333;
-    white-space: nowrap;
-}
-
-/* Button styling */
-button {
-    display: block;
-    width: 100%;
-    padding: 12px;
+    flex-direction: row;
     margin: 20px 0;
-    border: none;
-    background: #4a90e2;
-    color: #fff;
-    font-size: 1.1rem;
-    font-weight: bold;
-    border-radius: 8px;
+}
+
+.about .box .year_company {
+    min-width: 150px;
+}
+
+.about .box .year_company h5 {
+    text-transform: uppercase;
+    color: #848c90;
+    font-weight: 600;
+}
+
+.about .box .text h4 {
+    text-transform: uppercase;
+    color: #333333;
+    font-size: 16px;
+}
+
+/* Skills */
+.skills .box {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 15px;
+    align-items: center;
+}
+
+.skills .box h4 {
+    text-transform: uppercase;
+    color: #007acc;
+    font-weight: 500;
+}
+
+.skills .box .percent2 {
+    position: relative;
+    background-color: #dddddd;
+    width: 100%;
+    border-radius: 10px;
+    height: 10px;
+}
+
+.skills .box .percent2 div {
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #007acc;
+}
+
+/* Language */
+.contact-info.language .percent {
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background-color: #dddddd;
+    display: block;
+    margin-top: 5px;
+}
+
+.contact-info.language .percent div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #1d1d1c;
+}
+
+.contact-info.language .text {
+    margin-right: 10px;
+}
+
+/* Buttons */
+.btn-div {
+    display: flex;
+    gap: 20px;
+}
+
+.download-btn,
+.edit-btn {
+    background-color: #007acc;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    text-align: center;
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-button:hover {
-    background: #357abd;
-    transform: translateY(-2px);
+.download-btn:hover,
+.edit-btn:hover {
+    background-color: #005fa3;
 }
 
-button:active {
-    background: #2a5b9c;
-    transform: scale(0.95);
+.download-btn {
+    background-color: #007acc;
 }
 
-/* Responsive design */
-@media (max-width: 768px) {
-    .profile-pic {
-        width: 100px;
-        height: 100px;
-    }
-
-    h1 {
-        font-size: 1.8rem;
-    }
-
-    button {
-        font-size: 1rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .cv-container {
-        padding: 15px;
-    }
-
-    .profile-pic {
-        width: 80px;
-        height: 80px;
-    }
-
-    h1 {
-        font-size: 1.5rem;
-    }
-
-    button {
-        font-size: 0.9rem;
-    }
+.edit-btn {
+    background-color: #005fa3;
 }
